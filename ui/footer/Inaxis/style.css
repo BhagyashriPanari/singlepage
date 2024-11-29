@@ -1,0 +1,785 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Main container */
+.main1 {
+  padding: 0 5%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+
+}
+
+.logo img{
+  width: 120px;
+}
+
+.main1 h1 {
+  text-transform: uppercase;
+  color: red;
+  font-weight: 600;
+  font-size: 3.5rem;
+  margin-top: 15%;
+}
+
+.buyBtn {
+  background: red;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin: 0  !important;
+}
+
+.buyBtn:hover {
+  background: rgb(163, 14, 14);
+}
+
+.DashCam {
+  position: relative;
+  max-height: 300px;
+  width: 100%;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.text-overlay-bottom {
+  clip-path: polygon(0 20%, 100% 18%, 90% 52%, 100% 79%, 0 81%, 10% 53%);
+  background-color: red;
+  transform: rotate(-6deg);
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+/* Features section */
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 7, 7);
+  padding: 20px;
+}
+
+.feature {
+  text-align: center;
+  flex: 1 1 calc(50% - 20px);
+  margin: 10px;
+  color: white;
+}
+
+.feature img {
+  max-width: 50px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Key Features section */
+.position-relative {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.position-relative img {
+  width: 100%;
+  border-radius: 10px;
+  filter: brightness(50%);
+  object-fit: cover;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px 20px;
+ 
+  border-radius: 5px;
+  color: white;
+}
+.position-relative1 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.position-relative1 img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: auto;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+ text-align: start;
+  border-radius: 5px;
+  color: black !important;
+}
+@media screen and (max-width:1300px) {
+  
+.position-relative1 img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: auto;
+  filter: brightness(50%);
+}
+  .overlay1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+   text-align: start;
+    border-radius: 5px;
+    color: white !important;
+  }
+}
+
+.overlay h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .main h1 {
+      font-size: 2rem;
+      margin-top: 10%;
+  }
+
+  .text-overlay {
+      font-size: 0.9rem;
+      top: 5%;
+      right: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-section {
+      flex-direction: column;
+  }
+
+  .feature {
+      flex: 1 1 100%;
+  }
+
+  .buyBtn {
+      font-size: 1rem;
+      padding: 8px 15px;
+  }
+
+  .main h1 {
+      font-size: 1.8rem;
+  }
+
+  .text-overlay {
+      font-size: 0.8rem;
+  }
+
+  .text-overlay-bottom {
+      width: 80%;
+      font-size: 0.8rem;
+  }
+
+  .text-overlay {
+      position: static;
+      margin: 10px 0;
+      background: none;
+      color: red;
+      font-size: 1.2rem;
+      text-align: center;
+  }
+
+  .buyBtn {
+      margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main h1 {
+      font-size: 1.5rem;
+  }
+
+  .buyBtn {
+      font-size: 0.9rem;
+  }
+
+  .features-section {
+      padding: 10px;
+  }
+
+  .feature p {
+      font-size: 0.8rem;
+  }
+
+  .text-overlay {
+      font-size: 0.7rem;
+  }
+
+  .text-overlay-bottom {
+      font-size: 0.7rem;
+      padding: 8px;
+  }
+
+  .text-overlay {
+      position: static;
+      margin: 10px 0;
+      background: none;
+      color: red;
+      font-size: 1rem;
+      text-align: center;
+  }
+
+  .buyBtn {
+      margin-top: 10px;
+  }
+}
+
+
+.hero img{
+  width: 1100px;
+}
+
+.obd-section {
+  background-color: #f9f9f9;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+.obd-section h1,
+.obd-section h2 {
+  color: #333;
+}
+.obd-section img {
+  transition: transform 0.3s ease;
+}
+.obd-section img:hover {
+  transform: scale(1.05);
+}
+
+/* General Styling */
+.responsive-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.group-203 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.group-197 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connections-studio-1 {
+  width: 100%;
+  max-width: 200px; /* Adjust based on your design */
+  height: auto;
+}
+
+.plug-play-obd-2-hardwire-kit {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .group-203 {
+    flex-direction: row;
+    max-width: 600px;
+  }
+
+  .plug-play-obd-2-hardwire-kit {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+}
+
+
+
+.footer {
+    background-color: #f51e1e;
+    color: white;
+    padding: 40px 20px;
+  }
+  .footer h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .footer-icons img {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+  }
+  .contact-info {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  .address {
+    font-size: 0.9rem;
+  }
+  .main{
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+  }
+
+  /* General Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  h1.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  h2.subtitle {
+    color: #f51e1e;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .warranty-list {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .warranty-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #f51e1e;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .footer h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-icons img {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+  }
+  
+  .contact-info {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .address {
+    font-size: 0.9rem;
+  }
+
+  /* General Styling for Warranty Section */
+.faq-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .faq-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    border-top: 1px solid #e5e5e5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-list li:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .faq-question {
+    flex-grow: 1;
+    font-weight: 500;
+  }
+  
+  .faq-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f51e1e;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid #f51e1e;
+    border-radius: 50%;
+  }
+  
+  .faq-icon:hover {
+    background-color: #f51e1e;
+    color: white;
+  }
+  
+  /* General Styling for Form Section */
+.form-section {
+  background-color: #f51e1e;
+  color: white;
+  padding: 60px 20px;
+}
+
+.text-section {
+  max-width: 500px;
+}
+
+.form-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.form-description {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.form-container {
+  background: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 350px;
+  width: 100%;
+  color: #333;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #ffff;
+}
+
+.form-control,
+.form-select {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #ffff;
+  padding: 10px;
+  border-radius: 0;
+}
+
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #ffff;
+  box-shadow: 0 0 4px rgba(245, 30, 30, 0.5);
+  color: #000;
+}
+
+.btn-submit {
+  background-color: #ffff;
+  color: red;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color:red;
+  color: white;
+}
+
+.form-label,.form-select{
+  color: #fff;
+}
+
+
+
+.text-danger {
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.product-card {
+  background-color: #444;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin: 1rem 0 0.5rem;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.btn-outline-light {
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.cropped-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Crops the uploaded image */
+  border-radius: 8px;
+}
+
+.cropped-image-large {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Crops the uploaded image */
+  border-radius: 8px;
+}
+
+/* Promo Section *//* Promo Section Styles */
+
+
+
+/* Promo Section Styles */
+.promo-section {
+    background: url('images/close-up-woman-electric-car-23-2149146253-10.png') center/cover no-repeat;
+    height: 400px;
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+}
+
+.promo-title {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+}
+
+.promo-description {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.promo-button {
+    background-color: #ff4438;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.promo-button:hover {
+    background-color: #ff271d;
+    text-decoration: none;
+}
+
+.promo-price {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.trusted-section {
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.card-placeholder {
+  background-color: #d3d3d3;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-section {
+  background-color: #fff;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #e63946; /* Bright red */
+}
+
+.custom-card {
+  border: 1px solid #e63946; /* Red border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  height: 400px;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  height: 400px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #e63946;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1.0rem;
+  color:#444;
+}
+
+.benefits-section {
+  background-color: #ffffff;
+}
+
+.benefit-card {
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.benifits{
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+/*inax app*/
+.container1 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+/* Center the image horizontally */
+.container1 {
+  padding: 15px;
+  text-align: center; 
+  
+}
+  /* Ensures content is centered */
